@@ -1,0 +1,8 @@
+{
+  "name": "Lohia Ayurvedic Pharmacy | Guwahati Since 1988",
+  "description": "Established in 1988 in Guwahati, Lohia Ayurvedic Pharmacy is a premier institution of authentic classical Ayurvedic medicines, botanical formulations, and heritage wellness in Northeast India.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

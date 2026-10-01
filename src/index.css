@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: 'Cormorant Garamond', Georgia, Cambria, serif;
+  --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-sans);
+    color: #232B25;
+    background-color: #FAF7F2;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, .font-serif {
+    font-family: var(--font-serif);
+  }
+}
+
+/* Botanical parchment & paper textures */
+.bg-parchment {
+  background-color: #FAF7F2;
+}
+
+.bg-botanical-dark {
+  background-color: #0E241B;
+}
+
+.bg-botanical-deep {
+  background-color: #091711;
+}
+
+.bg-botanical-card {
+  background-color: #132F23;
+}
+
+.text-gold-antique {
+  color: #C5A572;
+}
+
+.border-gold-antique\/30 {
+  border-color: rgba(197, 165, 114, 0.3);
+}
+
+/* Hairline dividers for luxury editorial layout */
+.hairline-b {
+  border-bottom: 1px solid rgba(15, 40, 30, 0.08);
+}
+
+.hairline-t {
+  border-top: 1px solid rgba(15, 40, 30, 0.08);
+}
+
+.hairline-light-b {
+  border-bottom: 1px solid rgba(244, 239, 230, 0.12);
+}
+
+.hairline-light-t {
+  border-top: 1px solid rgba(244, 239, 230, 0.12);
+}
+
+/* Image zoom & editorial hover transition */
+.image-editorial-wrap {
+  overflow: hidden;
+}
+
+.image-editorial-wrap img {
+  transition: transform 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.image-editorial-wrap:hover img {
+  transform: scale(1.04);
+}
