@@ -8,10 +8,10 @@ export const HERBS_DATA: Herb[] = [
     botanicalName: 'Withania somnifera',
     commonName: 'Indian Ginseng / Winter Cherry',
     family: 'Solanaceae',
-    origin: 'Arid scrub forests & foothills of the Himalayas',
-    summary: 'The venerable royal root celebrated in Charaka Samhita for conferring the stamina, grace, and vitality of a spirited horse while anchoring restless nervous energy.',
+    origin: 'Native to dry sub-tropical tracts and traditional cultivation across India',
+    summary: 'A cornerstone root in classical Ayurvedic literature, traditionally described in the Charaka Samhita and Bhava Prakasha as a premier Balya (strength-nourishing) and Rasayana (rejuvenative) botanical.',
     rasa: ['Tikta (Bitter)', 'Kashaya (Astringent)', 'Madhura (Sweet)'],
-    virya: 'Ushna (Heating)',
+    virya: 'Ushna (Mildly Warm)',
     vipaka: 'Madhura',
     doshaBalancing: {
       vata: 'Pacifies',
@@ -19,27 +19,27 @@ export const HERBS_DATA: Herb[] = [
       kapha: 'Pacifies'
     },
     keyBenefits: [
-      'Nourishes Ojas (vital somatic essence) and promotes deep restorative sleep',
-      'Modulates cortisol and enhances resilience against physical and emotional distress',
-      'Supports neuro-muscular vitality and reproductive vigor (Vajikarana)',
-      'Strengthens joints and relieves chronic muscular stiffness'
+      'Traditionally used in Ayurveda to support physical resilience and general stamina',
+      'Classically classified as an herb that helps nourish and ground restless Vata dosha',
+      'Historically taken alongside warm milk in traditional evening routines',
+      'Recognized in classical texts for supporting overall vitality and vitality (Ojas)'
     ],
     traditionalPreparations: [
       {
-        type: 'Ksheerapaka (Milk Decoction)',
-        details: 'Slow-simmered root powder in A2 cow milk with cardamom and wild forest honey before bed.'
+        type: 'Ksheerapaka (Traditional Milk Preparation)',
+        details: 'Classical method of gently boiling finely powdered root with milk and water until reduced.'
       },
       {
-        type: 'Churna with Ghee',
-        details: 'Taken with warm hand-churned ghee for grounding erratic Vata dosha.'
+        type: 'Churna (Herbal Powder)',
+        details: 'Traditionally consumed with warm water or ghee as recommended by an Ayurvedic physician.'
       },
       {
-        type: 'Ashwagandharishta',
-        details: 'Natural wild honey fermentation for swift systemic absorption.'
+        type: 'Classical Arishta Formulations',
+        details: 'Part of classical fermented preparations such as Ashwagandharishta.'
       }
     ],
-    classicalCitation: '"अश्वगन्धा कटुस्तिक्ता कषायोष्णा च वातनुत्। रसायनं विसर्पघ्नी कासश्वासक्षयापहा॥" — Bhava Prakasha Nighantu',
-    harvestingNotes: 'Roots harvested in late autumn after the berries ripen to a vibrant orange-red, dried in gentle shade to preserve volatile withanolides.',
+    classicalCitation: '"अश्वगन्धा कटुस्तिक्ता कषायोष्णा च वातनुत्। रसायनं विसर्पघ्नी कासश्वासक्षयापहा॥" — Bhava Prakasha Nighantu (Guduchyadi Varga)',
+    harvestingNotes: 'Roots are traditionally collected after flowering and mature berry formation, dried carefully in ventilated shade.',
     imageUrl: 'https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=1200&q=85',
     accentColor: '#C98A2C'
   },
@@ -50,8 +50,8 @@ export const HERBS_DATA: Herb[] = [
     botanicalName: 'Bacopa monnieri',
     commonName: 'Water Hyssop / Herb of Grace',
     family: 'Plantaginaceae',
-    origin: 'Wetlands of the Brahmaputra Valley & Assam waterways',
-    summary: 'Named after Brahma, the creator of cosmic intellect. Renowned in ancient texts as the supreme Medhya Rasayana for mental clarity, lucid recall, and tranquil meditation.',
+    origin: 'Wetlands and clean freshwater banks across Assam and the Indian subcontinent',
+    summary: 'Celebrated in classical Ayurvedic texts as a premier Medhya Rasayana—a botanical historically regarded for supporting mental calmness, intellectual clarity, and contemplative tranquility.',
     rasa: ['Tikta (Bitter)', 'Kashaya (Astringent)', 'Madhura (Sweet)'],
     virya: 'Sheeta (Cooling)',
     vipaka: 'Madhura',
@@ -61,27 +61,27 @@ export const HERBS_DATA: Herb[] = [
       kapha: 'Balances'
     },
     keyBenefits: [
-      'Sharpens dhi (acquisition), dhriti (retention), and smriti (memory recall)',
-      'Cools cerebral heat and dissolves chronic agitation and racing thoughts',
-      'Strengthens synaptic transmission and speech articulation',
-      'Calms heart palpitation and balances hyperactive nervous impulses'
+      'Traditionally classified as Medhya (supportive of learning, recall, and retention)',
+      'Classically regarded as having a cooling and calming influence on Pitta dosha',
+      'Frequently referenced in traditional texts for supporting meditative focus',
+      'Commonly infused into classical scalp massage oils for nocturnal relaxation'
     ],
     traditionalPreparations: [
       {
         type: 'Brahmi Ghrita',
-        details: 'Herbal juice cooked with aged cow ghee for direct transit across the blood-brain barrier.'
+        details: 'Herbal extracts cooked into clarified cow butter following classical Sneha Kalpana rites.'
       },
       {
-        type: 'Swarasa (Fresh Expressed Juice)',
-        details: 'Taken early at dawn with a pinch of black pepper to balance cooling potency.'
+        type: 'Swarasa (Expressed Leaf Juice)',
+        details: 'Freshly gathered leaves traditionally expressed with small quantities of warming spices.'
       },
       {
-        type: 'Medicated Scalp Taila',
-        details: 'Warm oil Shirodhara and nocturnal temple massage.'
+        type: 'Medicated Scalp Oils',
+        details: 'Infused into sesame or coconut base oils for traditional Shiro Abhyanga.'
       }
     ],
-    classicalCitation: '"ब्राह्मी हिमा सरा तिक्ता कषाया मधुरा लघुः। मेध्या स्वर्या स्मृतिप्रदा कुष्ठदोषनाशिनी॥" — Charaka Samhita Sutrasthana',
-    harvestingNotes: 'Hand-picked during sunrise from unpolluted freshwater streams in lower Assam, washed immediately in running mountain springs.',
+    classicalCitation: '"ब्राह्मी हिमा सरा तिक्ता कषाया मधुरा लघुः। मेध्या स्वर्या स्मृतिप्रदा कुष्ठदोषनाशिनी॥" — Charaka Samhita (Sutrasthana)',
+    harvestingNotes: 'Whole succulent creeping herbs gathered from unpolluted freshwater habitats, washed thoroughly in clean spring water.',
     imageUrl: 'https://images.unsplash.com/photo-1512069772995-ec65ed45afd6?auto=format&fit=crop&w=1200&q=85',
     accentColor: '#1A3F31'
   },
@@ -90,12 +90,12 @@ export const HERBS_DATA: Herb[] = [
     sanskritName: 'Tulsi',
     devanagari: 'तुलसी',
     botanicalName: 'Ocimum sanctum',
-    commonName: 'Holy Basil / Queen of Herbs',
+    commonName: 'Holy Basil',
     family: 'Lamiaceae',
-    origin: 'Sacred courtyards across Assam & the Indian subcontinent',
-    summary: 'Regarded as the earthly embodiment of Lakshmi. Revered as an unmatched adaptogen and respiratory shield that purifies the aura, lungs, and cellular prana.',
+    origin: 'Sacred domestic gardens and cultivations across Assam and India',
+    summary: 'Venerated across Indian tradition as a sacred plant and respiratory tonic. Classical Nighantus highlight its aromatic warming nature and its affinity for balancing Kapha and Vata.',
     rasa: ['Katu (Pungent)', 'Tikta (Bitter)'],
-    virya: 'Ushna (Heating)',
+    virya: 'Ushna (Warm)',
     vipaka: 'Katu',
     doshaBalancing: {
       vata: 'Pacifies',
@@ -103,27 +103,27 @@ export const HERBS_DATA: Herb[] = [
       kapha: 'Pacifies'
     },
     keyBenefits: [
-      'Clears mucus, relieves bronchial congestion, and expels deep respiratory toxins',
-      'Enhances immunomodulation and shields against environmental pathogens',
-      'Opens the heart and mind, bringing clarity to spiritual and daily practice',
-      'Improves micro-circulation and balances post-prandial glycemic response'
+      'Traditionally brewed as warm infusions during seasonal transitions (Ritu Sandhi)',
+      'Classically regarded as supportive of clear breathing and healthy respiratory function',
+      'Historically revered for uplifting the spirit and purifying the domestic environment',
+      'Valued in traditional daily herbal tea blends with ginger and black pepper'
     ],
     traditionalPreparations: [
       {
-        type: 'Phanta (Hot Infusion)',
-        details: 'Freshly gathered whole purple Krishna Tulsi leaves steeped in boiling water with ginger.'
+        type: 'Phanta (Hot Water Infusion)',
+        details: 'Fresh or dried whole leaves steeped in boiling water for five to ten minutes.'
       },
       {
-        type: 'Ark (Steam Distillate)',
-        details: 'Potent aromatic botanical water for inhalation and respiratory tonics.'
+        type: 'Ark (Herbal Distillate)',
+        details: 'Traditional steam-distilled aromatic floral and leaf water.'
       },
       {
-        type: 'Leaf Paste with Ghee',
-        details: 'Applied for dermal inflammation and insect stings.'
+        type: 'Classical Kashaya Blend',
+        details: 'Co-simmered with ginger, cinnamon, and long pepper for cold-season wellness.'
       }
     ],
     classicalCitation: '"तुलसी कटुका तिक्ता हृद्योष्णा दाहपित्तकृत्। दीपनी कुष्ठकृच्छ्रास्रपार्श्वरुक् कफवातजित्॥" — Dhanvantari Nighantu',
-    harvestingNotes: 'Leaves collected at midday when volatile eugenol and terpene essential oils reach maximum concentration.',
+    harvestingNotes: 'Leaves harvested ideally in the mid-morning after dew evaporates, ensuring natural aromatic essential oils are intact.',
     imageUrl: 'https://images.unsplash.com/photo-1615485290382-441e4d049cb5?auto=format&fit=crop&w=1200&q=85',
     accentColor: '#2A5A46'
   },
@@ -132,10 +132,10 @@ export const HERBS_DATA: Herb[] = [
     sanskritName: 'Shatavari',
     devanagari: 'शतावरी',
     botanicalName: 'Asparagus racemosus',
-    commonName: 'Wild Asparagus / Queen of Roots',
+    commonName: 'Wild Asparagus',
     family: 'Asparagaceae',
-    origin: 'Sub-tropical forest belts of Assam and Meghalaya borders',
-    summary: 'Her name translates poetically to "she who possesses a hundred husbands" — the premier Rasayana for female endocrine balance, deep tissue lubrication, and serene vitality.',
+    origin: 'Sub-tropical forest belts and plains of Northeast India and the subcontinent',
+    summary: 'A revered nourishing botanical in the Ayurvedic pharmacopoeia, historically designated as a Rasayana with sweet, cooling, and soothing qualities for systemic rejuvenation.',
     rasa: ['Madhura (Sweet)', 'Tikta (Bitter)'],
     virya: 'Sheeta (Cooling)',
     vipaka: 'Madhura',
@@ -145,27 +145,27 @@ export const HERBS_DATA: Herb[] = [
       kapha: 'Balances'
     },
     keyBenefits: [
-      'Nourishes reproductive fluids (Shukra Dhatu) and balances hormonal fluctuations',
-      'Coats and soothes inflamed gastric mucosal linings and hyperacidity',
-      'Promotes abundant lactation and postpartum recuperation',
-      'Replenishes depleted systemic fluids during peri-menopause and stress'
+      'Traditionally utilized in Ayurveda to support maternal vitality and feminine wellness',
+      'Known for its sweet, unctuous (Snigdha) and soothing botanical properties',
+      'Classically recommended for pacifying internal heat and excess Pitta dosha',
+      'Historically taken with milk and ghee in restorative post-illness or seasonal regimens'
     ],
     traditionalPreparations: [
       {
         type: 'Shatavari Gulam',
-        details: 'Classical semi-solid confection cooked with jaggery and restorative botanicals.'
+        details: 'Traditional herbal confection prepared with jaggery and restorative spices.'
       },
       {
-        type: 'Root Powder in Warm Milk',
-        details: 'Sweetened with rock sugar candy (Mishri) for nocturnal replenishment.'
+        type: 'Root Churna in Milk',
+        details: 'Powdered dried root traditionally simmered gently in milk before retiring at night.'
       },
       {
-        type: 'Shatavaryadi Taila',
-        details: 'Medicated external oil for tissue elasticity and nerve strengthening.'
+        type: 'Classical Ghrita & Taila',
+        details: 'Simmered in classical lipid preparations for both internal and external use.'
       }
     ],
     classicalCitation: '"शतावरी गुरुः शीता स्वादुतिक्ता रसायनी। मेध्याऽग्निपुष्टिदा स्निग्धा चक्षुष्या शुक्रला स्तन्या॥" — Bhava Prakasha',
-    harvestingNotes: 'Fleshy tuberous roots carefully unearthed in the 3rd year of growth before the first winter frost.',
+    harvestingNotes: 'Tuberous roots traditionally unearthed when mature, peeled and dried under gentle solar conditions.',
     imageUrl: 'https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=1200&q=85',
     accentColor: '#B4533C'
   },
@@ -174,12 +174,12 @@ export const HERBS_DATA: Herb[] = [
     sanskritName: 'Haritaki',
     devanagari: 'हरीतकी',
     botanicalName: 'Terminalia chebula',
-    commonName: 'Chebulic Myrobalan / Supreme Healer',
+    commonName: 'Chebulic Myrobalan',
     family: 'Combretaceae',
-    origin: 'Dense deciduous tracts of Northeast India and foothills',
-    summary: 'Described by Sushruta as the loving mother who never causes harm: it gently scours toxins from the colon, rekindles digestive Agni, and prolongs biological youth.',
-    rasa: ['Kashaya (Dominant)', 'Tikta', 'Madhura', 'Katu', 'Amla'],
-    virya: 'Ushna (Mildly Heating)',
+    origin: 'Deciduous forests and foothills throughout India',
+    summary: 'Acclaimed in classical Ayurvedic texts as one of the most versatile botanicals, containing five of the six Ayurvedic tastes and forming a foundational pillar of classical Triphala.',
+    rasa: ['Kashaya (Astringent dominant)', 'Tikta', 'Madhura', 'Katu', 'Amla'],
+    virya: 'Ushna (Mildly Warming)',
     vipaka: 'Madhura',
     doshaBalancing: {
       vata: 'Pacifies',
@@ -187,41 +187,41 @@ export const HERBS_DATA: Herb[] = [
       kapha: 'Pacifies'
     },
     keyBenefits: [
-      'Possesses 5 of the 6 Ayurvedic tastes, harmonizing all three Doshas (Tridoshahara)',
-      'Regulates intestinal peristalsis without irritating delicate mucosal folds',
-      'Scrapes metabolic sludges (Ama) from subtle circulatory channels (Srotas)',
-      'Acts as a fundamental rejuvenator when taken with seasonal adjuvants (Ritu Haritaki)'
+      'Traditionally celebrated as Tridoshahara (harmonizing to all three doshic constitutions)',
+      'Classically used to support natural digestive flow and bowel regularity (Anulomana)',
+      'Key component of the revered three-fruit compound Triphala',
+      'Historically incorporated into classical Ritu Haritaki seasonal regimens'
     ],
     traditionalPreparations: [
       {
-        type: 'Ritu Haritaki',
-        details: 'Consumed with rock salt in monsoon, sugar in autumn, ginger in early winter.'
+        type: 'Triphala Compound',
+        details: 'Combined in classical proportions with Bibhitaki and Amalaki for daily balancing.'
       },
       {
         type: 'Abhayarishta',
-        details: 'Classical bio-fermented cordial for liver sluggishness and chronic constipation.'
+        details: 'Classical self-fermented herbal formulation documented in Sharangadhara Samhita.'
       },
       {
-        type: 'Triphala Component',
-        details: 'Compounded with Bibhitaki and Amalaki for daily balancing.'
+        type: 'Ritu Haritaki Regimen',
+        details: 'Traditionally taken with seasonal adjuvants like rock salt, jaggery, or honey.'
       }
     ],
-    classicalCitation: '"यस्य माता गृहे नास्ति तस्य माता हरीतकी। कदाचिद् कुप्यते माता नोदरस्था हरीतकी॥" — Ayurvedic adage from Kaiyadeva Nighantu',
-    harvestingNotes: 'Full-bodied, seed-heavy fruits gathered when yellow-green in late winter, dried under filtered solar heat.',
+    classicalCitation: '"यस्य माता गृहे नास्ति तस्य माता हरीतकी। कदाचिद् कुप्यते माता नोदरस्था हरीतकी॥" — Classical Ayurvedic proverb cited in Kaiyadeva Nighantu',
+    harvestingNotes: 'Mature fruits collected in late winter, deseeded and dried uniformly.',
     imageUrl: 'https://images.unsplash.com/photo-1596040033229-a9821ebd058d?auto=format&fit=crop&w=1200&q=85',
     accentColor: '#C5A572'
   },
   {
     id: 'guduchi',
-    sanskritName: 'Guduchi / Amrita',
+    sanskritName: 'Guduchi',
     devanagari: 'गुडूची',
     botanicalName: 'Tinospora cordifolia',
-    commonName: 'Heart-leaved Moonseed / Heavenly Nectar',
+    commonName: 'Heart-leaved Moonseed / Giloy',
     family: 'Menispermaceae',
-    origin: 'Wild creepers draping Neem trees in Assam forests',
-    summary: 'Known as "Amrita" (immortality). Celebrated as the ultimate blood detoxifier and immunomodulator that destroys toxic accumulation while preserving healthy tissues.',
+    origin: 'Climbing vines native to deciduous and dry forests across India',
+    summary: 'Classically designated as "Amrita" (nectar of life) in Ayurvedic texts. Highly prized for its unique bitter-sweet taste profile and its traditional role in supporting natural immunity and metabolic balance.',
     rasa: ['Tikta (Bitter)', 'Kashaya (Astringent)'],
-    virya: 'Ushna (Heating in potency yet cooling in action)',
+    virya: 'Ushna (Warm in thermal nature yet classically balancing to Pitta)',
     vipaka: 'Madhura',
     doshaBalancing: {
       vata: 'Balances',
@@ -229,27 +229,27 @@ export const HERBS_DATA: Herb[] = [
       kapha: 'Pacifies'
     },
     keyBenefits: [
-      'Breaks intermittent fevers (Jvara) and purifies hepatic tissue',
-      'Supports healthy white blood cell response and phagocytic efficiency',
-      'Eliminates systemic uric acid deposits and alleviates gout (Vatarakta)',
-      'Recharges cellular metabolic energy without depleting fluid reserves'
+      'Traditionally utilized in Ayurveda to support natural bodily defenses and vitality',
+      'Classically recommended for maintaining clear, balanced digestive fire (Deepana)',
+      'Traditionally valued for supporting comfortable joint movement and tissue purity',
+      'Historically prepared as a water decoction during changing seasons'
     ],
     traditionalPreparations: [
       {
         type: 'Guduchi Satva',
-        details: 'Pure white sedimentation starch extracted from fresh mature stems.'
+        details: 'Classical pure sediment extract prepared through cold-water settling of fresh mature stems.'
       },
       {
-        type: 'Kwath (Coarse Decoction)',
-        details: 'Boiled down to one-fourth volume with Pippali and Tulsi.'
+        type: 'Kwath (Herbal Decoction)',
+        details: 'Crushed dry or fresh stems simmered in water down to one-fourth original volume.'
       },
       {
         type: 'Amritarishta',
-        details: 'Classical fermentation for chronic convalescence and liver protection.'
+        details: 'Traditional bio-fermented cordial prepared following Bhaishajya Ratnavali specifications.'
       }
     ],
-    classicalCitation: '"गुडूची कटुका तिक्ता स्वादुपाका रसायनी। संग्रहिणी कषायोष्णा लघ्वी बल्याऽग्निदीपनी॥" — Bhava Prakasha',
-    harvestingNotes: 'Stems harvested specifically from vines twining around Neem trees (Neem Guduchi), considered therapeutically superior.',
+    classicalCitation: '"गुडूची कटुका तिक्ता स्वादुपाका रसायनी। संग्रहिणी कषायोष्णा लघ्वी बल्याऽग्निदीपनी॥" — Bhava Prakasha Nighantu',
+    harvestingNotes: 'Mature woody stems collected during dormancy when therapeutic bitter principles are most concentrated.',
     imageUrl: 'https://images.unsplash.com/photo-1509358271058-acd22cc93898?auto=format&fit=crop&w=1200&q=85',
     accentColor: '#1A3F31'
   }

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { FORMULATIONS_DATA } from '../data/productsData';
 import { Formulation } from '../types';
 import { ProductDetailModal } from './ProductDetailModal';
-import { Search, ArrowUpRight, MessageSquare, BookOpen, ShieldCheck } from 'lucide-react';
+import { Search, MessageSquare, BookOpen, Info, ShieldCheck } from 'lucide-react';
 
 interface ProductsShowcaseProps {
   onOpenPrescription: () => void;
@@ -36,29 +36,29 @@ export const ProductsShowcase: React.FC<ProductsShowcaseProps> = ({ onOpenPrescr
 
   const handleWhatsAppOrder = (productName: string) => {
     const message = encodeURIComponent(
-      `Hello Lohia Ayurvedic Pharmacy Guwahati,\nI would like to inquire about procuring: "${productName}". Please let me know the availability, price, and dispatch to my location.`
+      `Hello Lohia Ayurvedic Pharmacy,\nI would like to enquire about the availability and price of: "${productName}". Please let me know if it is currently in stock.`
     );
-    window.open(`https://wa.me/919435019888?text=${message}`, '_blank');
+    window.open(`https://wa.me/?text=${message}`, '_blank');
   };
 
   return (
-    <section id="formulations" className="py-20 lg:py-28 bg-[#F4EFE6] border-t border-[#0F281E]/10 relative">
+    <section id="formulations" className="py-18 lg:py-24 bg-[#F4EFE6] border-b border-[#0F281E]/10 relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
-        <div className="flex flex-col md:flex-row md:items-end justify-between pb-8 mb-10 border-b border-[#0F281E]/10 gap-6">
+        <div className="flex flex-col md:flex-row md:items-end justify-between pb-6 mb-8 border-b border-[#0F281E]/10 gap-6">
           <div>
-            <div className="flex items-center gap-2 text-xs tracking-[0.2em] uppercase font-semibold text-[#8C6D46] mb-3">
-              <span>DISPENSARY FORMULATIONS</span>
+            <div className="flex items-center gap-2 text-xs tracking-[0.18em] uppercase font-semibold text-[#8C6D46] mb-2.5">
+              <span>PRODUCTS & FORMULATIONS</span>
               <span aria-hidden="true" className="text-[#8C6D46]/40">/</span>
-              <span>ESTD. 1988 GUWAHATI</span>
+              <span>SAMPLE PREVIEW CATALOGUE</span>
             </div>
 
             <h2 className="font-serif text-3xl sm:text-5xl font-light text-[#0F281E] leading-[1.12]">
-              Classical Ayurvedic Medicines
+              Traditional Ayurvedic Products
             </h2>
 
-            <p className="mt-3 text-sm sm:text-base text-[#4E5E54] max-w-xl">
-              Authentic Shastriya preparations formulated according to Charaka Samhita, Bhaishajya Ratnavali, and Sharangadhara Samhita. Available at our Guwahati counter and through certified doorstep dispatch.
+            <p className="mt-2.5 text-sm sm:text-base text-[#4E5E54] max-w-xl">
+              An illustrative preview of classical Ayurvedic formulations and herbal wellness products stocked by traditional pharmacies. Specific brands, prices, and stock availability to be verified with our Guwahati store.
             </p>
           </div>
 
@@ -66,23 +66,31 @@ export const ProductsShowcase: React.FC<ProductsShowcaseProps> = ({ onOpenPrescr
           <div className="flex items-center gap-3">
             <button
               onClick={onOpenPrescription}
-              className="px-5 py-3 bg-[#0F281E] hover:bg-[#183F2F] text-[#FAF7F2] text-xs uppercase tracking-[0.16em] font-semibold transition-all flex items-center gap-2 shadow-xs cursor-pointer"
+              className="px-5 py-3 bg-[#0F281E] hover:bg-[#183F2F] text-[#FAF7F2] text-xs uppercase tracking-[0.14em] font-semibold transition-all flex items-center gap-2 shadow-xs cursor-pointer focus-visible:ring-2 focus-visible:ring-[#8C6D46]"
             >
-              <MessageSquare className="w-3.5 h-3.5 text-[#C5A572]" />
-              <span>Have a Vaidya's Prescription?</span>
+              <MessageSquare className="w-3.5 h-3.5 text-[#C5A572]" aria-hidden="true" />
+              <span>Have a Prescription or Enquiry?</span>
             </button>
           </div>
         </div>
 
+        {/* Sample Notice */}
+        <div className="mb-8 p-3.5 bg-[#FAF7F2] border border-[#0F281E]/10 text-xs text-[#5D6D63] flex items-center gap-2">
+          <Info className="w-4 h-4 text-[#8C6D46] shrink-0" aria-hidden="true" />
+          <span>
+            <strong>Note on Catalogue:</strong> The medicines shown below represent classical formulas from standard Ayurvedic texts. Lohia Ayurvedic Pharmacy acts as a retail stockist and supplier of certified Ayurvedic brands. Contact us to verify brand names and current inventory.
+          </span>
+        </div>
+
         {/* Filter Toolbar: Category Tabs + Search */}
-        <div className="flex flex-col lg:flex-row items-stretch lg:items-center justify-between gap-4 mb-10">
+        <div className="flex flex-col lg:flex-row items-stretch lg:items-center justify-between gap-4 mb-8">
           {/* Functional Button Tabs */}
-          <div className="flex flex-wrap items-center gap-1.5 p-1 bg-[#FAF7F2] border border-[#0F281E]/15">
+          <div className="flex flex-wrap items-center gap-1 p-1 bg-[#FAF7F2] border border-[#0F281E]/15">
             {categories.map((cat) => (
               <button
                 key={cat}
                 onClick={() => setSelectedCategory(cat)}
-                className={`px-3.5 py-1.5 text-xs font-medium transition-colors cursor-pointer ${
+                className={`px-3 py-1.5 text-xs font-medium transition-colors cursor-pointer focus-visible:ring-2 focus-visible:ring-[#8C6D46] ${
                   selectedCategory === cat
                     ? 'bg-[#0F281E] text-[#FAF7F2]'
                     : 'text-[#47574D] hover:text-[#0F281E]'
@@ -95,14 +103,16 @@ export const ProductsShowcase: React.FC<ProductsShowcaseProps> = ({ onOpenPrescr
 
           {/* Search Box */}
           <div className="relative">
+            <label htmlFor="product-search-input" className="sr-only">Search products and formulations</label>
             <input
+              id="product-search-input"
               type="text"
-              placeholder="Search by name, Rogadhikar (ailment), herb..."
+              placeholder="Search by name, classical category..."
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
-              className="w-full sm:w-80 text-xs px-3.5 py-2.5 bg-[#FAF7F2] border border-[#0F281E]/20 text-[#0F281E] placeholder:text-[#88978E] focus:outline-none focus:border-[#0F281E]"
+              className="w-full sm:w-72 text-xs px-3.5 py-2.5 bg-[#FAF7F2] border border-[#0F281E]/20 text-[#0F281E] placeholder:text-[#88978E] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#8C6D46]"
             />
-            <Search className="w-4 h-4 text-[#88978E] absolute right-3 top-2.5" />
+            <Search className="w-4 h-4 text-[#88978E] absolute right-3 top-2.5 pointer-events-none" aria-hidden="true" />
           </div>
         </div>
 
@@ -111,14 +121,17 @@ export const ProductsShowcase: React.FC<ProductsShowcaseProps> = ({ onOpenPrescr
           {filteredProducts.map((product) => (
             <div
               key={product.id}
-              className="bg-[#FAF7F2] border border-[#0F281E]/15 p-4 flex flex-col justify-between group hover:border-[#8C6D46] transition-all hover:shadow-sm"
+              className="bg-[#FAF7F2] border border-[#0F281E]/15 p-4 flex flex-col justify-between group hover:border-[#8C6D46] transition-all hover:shadow-xs"
             >
               <div>
                 {/* Image */}
-                <div className="aspect-[4/3] overflow-hidden border border-[#0F281E]/10 mb-4 bg-[#EDE5D6] image-editorial-wrap">
+                <div className="aspect-[4/3] overflow-hidden border border-[#0F281E]/10 mb-3 bg-[#EDE5D6] image-editorial-wrap">
                   <img
                     src={product.imageUrl}
                     alt={product.name}
+                    width="400"
+                    height="300"
+                    loading="lazy"
                     className="w-full h-full object-cover"
                   />
                 </div>
@@ -138,9 +151,9 @@ export const ProductsShowcase: React.FC<ProductsShowcaseProps> = ({ onOpenPrescr
                 </div>
 
                 {/* Indication */}
-                <div className="mt-3 pt-3 border-t border-[#0F281E]/10">
+                <div className="mt-2.5 pt-2.5 border-t border-[#0F281E]/10">
                   <div className="text-[10px] uppercase tracking-wider text-[#6B7C72]">
-                    Classical Indication
+                    Classical Context
                   </div>
                   <p className="text-xs text-[#2C3831] line-clamp-2 mt-0.5">
                     {product.indication}
@@ -154,22 +167,22 @@ export const ProductsShowcase: React.FC<ProductsShowcaseProps> = ({ onOpenPrescr
               </div>
 
               {/* Actions */}
-              <div className="mt-5 pt-3 border-t border-[#0F281E]/10 flex items-center justify-between gap-2">
+              <div className="mt-4 pt-3 border-t border-[#0F281E]/10 flex items-center justify-between gap-2">
                 <button
                   onClick={() => setActiveProduct(product)}
-                  className="text-xs font-medium text-[#0F281E] hover:text-[#B4533C] flex items-center gap-1 cursor-pointer transition-colors"
+                  className="text-xs font-medium text-[#0F281E] hover:text-[#B4533C] flex items-center gap-1 cursor-pointer transition-colors focus-visible:ring-2 focus-visible:ring-[#8C6D46]"
                 >
-                  <BookOpen className="w-3.5 h-3.5 text-[#8C6D46]" />
+                  <BookOpen className="w-3.5 h-3.5 text-[#8C6D46]" aria-hidden="true" />
                   <span>Inspect Details</span>
                 </button>
 
                 <button
                   onClick={() => handleWhatsAppOrder(product.name)}
-                  className="p-2 text-[#0F281E] hover:text-[#B4533C] transition-colors cursor-pointer"
-                  title="Inquire via WhatsApp"
-                  aria-label={`Inquire about ${product.name} on WhatsApp`}
+                  className="p-2 text-[#0F281E] hover:text-[#B4533C] transition-colors cursor-pointer focus-visible:ring-2 focus-visible:ring-[#8C6D46] rounded-xs"
+                  title="Enquire on WhatsApp"
+                  aria-label={`Enquire about ${product.name} on WhatsApp`}
                 >
-                  <MessageSquare className="w-4 h-4 text-[#8C6D46]" />
+                  <MessageSquare className="w-4 h-4 text-[#8C6D46]" aria-hidden="true" />
                 </button>
               </div>
             </div>
@@ -177,45 +190,21 @@ export const ProductsShowcase: React.FC<ProductsShowcaseProps> = ({ onOpenPrescr
         </div>
 
         {filteredProducts.length === 0 && (
-          <div className="py-16 text-center bg-[#FAF7F2] border border-[#0F281E]/10 p-8">
+          <div className="py-12 text-center bg-[#FAF7F2] border border-[#0F281E]/10 p-6">
             <p className="font-serif text-xl text-[#0F281E]">
               No formulation found matching your search.
             </p>
             <p className="text-xs text-[#6B7C72] mt-1 max-w-md mx-auto">
-              Our Guwahati dispensary stocks over 450 classical preparations including rare Bhasmas, Asavas, and custom Kwaths. Send us a message on WhatsApp for custom compounding.
+              Looking for a specific classical medicine or herb? Send an inquiry directly to our pharmacy counter to check availability.
             </p>
             <button
               onClick={onOpenPrescription}
-              className="mt-4 px-6 py-2.5 bg-[#0F281E] text-[#FAF7F2] text-xs uppercase tracking-wider font-semibold cursor-pointer"
+              className="mt-4 px-6 py-2.5 bg-[#0F281E] text-[#FAF7F2] text-xs uppercase tracking-wider font-semibold cursor-pointer focus-visible:ring-2 focus-visible:ring-[#8C6D46]"
             >
-              Inquire with Dispensary Team
+              Send Medicine Enquiry
             </button>
           </div>
         )}
-
-        {/* Bottom Dispensary Quality Guarantee */}
-        <div className="mt-14 p-6 bg-[#0E241B] text-[#FAF7F2] border border-[#C5A572]/30 flex flex-col md:flex-row items-center justify-between gap-4">
-          <div className="flex items-center gap-4">
-            <div className="w-12 h-12 rounded-full border border-[#C5A572]/40 flex items-center justify-center shrink-0">
-              <ShieldCheck className="w-6 h-6 text-[#C5A572]" />
-            </div>
-            <div>
-              <div className="text-xs uppercase tracking-[0.18em] text-[#C5A572] font-semibold">
-                Guaranteed Shastriya Pharmacopoeia
-              </div>
-              <p className="text-xs text-[#C4D0C9] mt-0.5">
-                Every Asava is tested for self-generated natural alcohol levels. Medicated oils are prepared strictly through Sneha Kalpana without cheap paraffin bases.
-              </p>
-            </div>
-          </div>
-
-          <button
-            onClick={onOpenPrescription}
-            className="shrink-0 px-6 py-2.5 bg-[#C5A572] hover:bg-[#B38E55] text-[#0A1A13] text-xs uppercase tracking-[0.16em] font-bold transition-colors cursor-pointer"
-          >
-            Prescription Dispatch Service
-          </button>
-        </div>
       </div>
 
       {/* Modal */}

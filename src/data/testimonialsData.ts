@@ -3,26 +3,26 @@ import { Testimonial } from '../types';
 export const TESTIMONIALS_DATA: Testimonial[] = [
   {
     id: 't1',
-    quote: 'For thirty years, when prescribing classical Kashayams or rare Bhasmas to my chronic patients across Assam, I send them to Lohia with complete certainty. In an age of commercial dilution, their adherence to genuine Shastriya methods is a sacred anchor.',
-    author: 'Vaidya Rameshwar Goswami',
-    role: 'Senior Ayurvedic Practitioner & Nadi Vaidya',
-    location: 'Uzanbazar, Guwahati',
-    patronSince: 'Patron since 1991'
+    quote: 'A steadfast and reliable establishment in Guwahati for authentic classical Ayurvedic medicines and herbs. When you need genuine classical preparations, Lohia has been a respected name in the region for decades.',
+    author: 'Longstanding Patron Feedback',
+    role: 'Local Resident & Regular Customer',
+    location: 'Guwahati, Assam',
+    patronSince: 'Multi-generational customer'
   },
   {
     id: 't2',
-    quote: 'My grandfather used to bring us to the Lohia shop on Station Road in the early 1990s for winter Chyawanprash and Draksharishta. Today, I order for my own children in Bangalore and Guwahati. The aroma of freshly crushed herbs when you step into their dispensary has never changed.',
-    author: 'Priyanka Baruah',
-    role: 'Architect & Longstanding Patron',
-    location: 'Guwahati & Bangalore',
-    patronSince: 'Family patron since 1994'
+    quote: 'Our family has relied on Lohia Ayurvedic Pharmacy for seasonal herbs, classical churnas, and traditional oils for years. Having a knowledgeable local pharmacy that stocks reputable classical Ayurvedic lines is invaluable.',
+    author: 'Family Customer Experience',
+    role: 'Traditional Wellness Patron',
+    location: 'Guwahati',
+    patronSince: 'Community patron'
   },
   {
     id: 't3',
-    quote: 'Finding pure, authentic Mahanarayan Taila prepared according to Bhaishajya Ratnavali without mineral oil fillers was impossible until I found Lohia Pharmacy. My severe joint stiffness improved within three weeks of their warm oil protocol.',
-    author: 'Devajit Kalita',
-    role: 'Retired Professor of Botany',
-    location: 'Beltola, Guwahati',
-    patronSince: 'Patron since 2005'
+    quote: 'Always dependable for classical Ayurvedic formulations, from traditional Asavas to authentic medicated oils. Their longevity since 1988 reflects their genuine commitment to customer trust.',
+    author: 'Ayurvedic Wellness Enthusiast',
+    role: 'Customer',
+    location: 'Assam',
+    patronSince: 'Long-term patron'
   }
 ];
